@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>check số may mắn</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+        integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1>Checking</h1>
+                <p>kiểm tra thông tin số điện thoại của bạn</p>
+                <hr>
+            </div>
+            <div class="col-md-4 ml-auto mr-auto">
+                <div class="form-group">
+                    <label for="from">nhập số</label>
+                    <input type="text" class="form-control" placeholder="VD khai: 1234567678" maxlength="15" id="phone"
+                        name="phone" onkeypress="mask(this, mphone);" onblur="mask(this, mphone);">
+                    <small id="emailHelp" class="form-text text-muted">số may mắn của bạn.</small>
+                </div>
+                <div class="form-group">
+                    <label for="to">3 số cuối của bạn</label>
+                    <input type="text" class="form-control" id="phone" name="phone" onkeypress="mask(this, mphone);"
+                        onblur="mask(this, mphone);" placeholder="VD khai: 123" maxlength="15">
+                    <small id="emailHelp" class="form-text text-muted">Số may mắn.</small>
+                </div>
+                <button class="btn btn-primary btn-block modalBtn"
+                    style="cursor: pointer" id="send" onclick="send()">check</button>
+            </div>
+        </div>
+        <div class="modal">
+            <div id="result" class="lead m-5 text-danger text-uppercase content">
+            </div>
+        </div>
+</body>
+
+</html>
