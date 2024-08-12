@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Checking your browser...</title>
+    <link rel="shortcut icon" href="img/Favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container-video" id="container-video">
+        <video class="video" id="video" autoplay muted loop>
+            <source src="vid/video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="container" id="container">
+        <img class="gif" src="img/dots.gif" alt="Dots">
+        <h2 class="text">Bạn đợi tý nhé bé khải đang check domain của bạn.</h2>
+        <p class="text">This process is automatic. Your browser will redirect to your requested content shortly.</p>
+        <p class="text-captcha" id="text-captcha">Please enter captcha</p>
+        <div class="counter" id="counter">3</div>
+        <div class="recaptcha-container" id="recaptcha-container">
+            <div class="button-container">
+                <div class="button" id="button" onclick="showVideo()"></div>
+            </div>
+            <div class="text-container">
+                <p>I'm not a robot</p>
+            </div>
+            <div class="image-container">
+                <img src="img/RecaptchaLogo.png" alt="Recaptcha">
+                <p>Privacy - Terms</p>
+            </div>
+        </div>
+       <p><b><i>Bé Khải ||<a href="http://github.com/khaicybers" style="color: rgb(93, 37, 110);" target="_blank" rel="noopener noreferrer">Click here</a></i></b></p>
+    </div>
+</body>
+
+<script src="main.js"></script>
+
+</html>
